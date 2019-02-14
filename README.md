@@ -43,7 +43,11 @@ R: Este programa conta palavras.
 
 [EXECUÇÃO DO PROGRAMA]
 
-$ sh nasa.sh
+1. Criar uma pasta de nome "zip" e mover os arquivos NASA_access_log_Aug95.gz e NASA_access_log_Jul95.gz para dentro da pasta.
+
+2. Executar o comando abaixo:
+
+   $ sh nasa.sh
 
 
 
