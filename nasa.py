@@ -1,9 +1,13 @@
 from sys import argv, exit
 from pyspark import SparkContext, SparkConf
+from pyspark.sql import SparkSession
+
 
 #Criando o contexto do Spark - conectando a aplicacao ao cluster.
 conf = SparkConf().setAppName('Nasa')
 sc = SparkContext(conf=conf)
+spark = SparkSession.builder.getOrCreate()
+spark.sparkContext.setLogLevel('ERROR')
 source = "./"+argv[1]
 
 rdd = sc.textFile(source)

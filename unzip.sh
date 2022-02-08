@@ -2,10 +2,10 @@
 
 echo "Descompactacao de arquivos"
 echo "Arquivos:        " 
-ls zip/*
+ls datasets/*
 
 echo "Inicio da descompactacao dos arquivos"
-cp zip/*.gz .
+cp datasets/*.gz .
 gzip -d -f ${origem}*gz 
 cat NASA* > dataset_nasa
 echo "Dataset preparado: " 
